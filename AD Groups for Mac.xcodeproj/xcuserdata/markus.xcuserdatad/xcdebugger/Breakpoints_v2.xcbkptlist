@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   uuid = "9D3EB9BF-53CE-48FB-A62C-91ECEE46C6B6"
+   type = "1"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.AddressBreakpoint">
+         <BreakpointContent
+            uuid = "02F90277-AAB4-4437-8A0D-54A0EAEAB351"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            symbolName = "*0x100019c2d">
+            <Locations>
+               <Location
+                  uuid = "02F90277-AAB4-4437-8A0D-54A0EAEAB351 - 3caedec5031e3408"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "AD_Groups_for_Mac.LdapConnection.findGroupsManagableByUser(userDn: Swift.String) throws -&gt; Swift.Dictionary&lt;Swift.String, Swift.Dictionary&lt;Swift.String, Any&gt;&gt;"
+                  moduleName = "AD Groups for Mac"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/markus/Documents/projects/AD%20Groups%20for%20Mac/AD%20Groups%20for%20Mac/LdapConnection.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "47"
+                  endingLineNumber = "47"
+                  offsetFromSymbolStart = "237">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>

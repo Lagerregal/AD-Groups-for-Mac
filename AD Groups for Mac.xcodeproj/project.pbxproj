@@ -1,0 +1,464 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 52;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		2842E249246DCF980053CCCA /* PerfectLDAP in Frameworks */ = {isa = PBXBuildFile; productRef = 2842E248246DCF980053CCCA /* PerfectLDAP */; };
+		2899E4CF246C3E5900EDB0DA /* AddMembers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2899E4CE246C3E5900EDB0DA /* AddMembers.swift */; };
+		289DF76D246D652E0022911D /* GroupStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 289DF76C246D652E0022911D /* GroupStorage.swift */; };
+		289DF770246D698E0022911D /* ErrorMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 289DF76F246D698E0022911D /* ErrorMessage.swift */; };
+		289DF776246D88AC0022911D /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 289DF775246D88AC0022911D /* main.swift */; };
+		289DF778246D8F2A0022911D /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 289DF777246D8F2A0022911D /* MainMenu.xib */; };
+		289DF77A246D96CE0022911D /* Settings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 289DF779246D96CE0022911D /* Settings.swift */; };
+		289DF77C246D98460022911D /* SettingsService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 289DF77B246D98460022911D /* SettingsService.swift */; };
+		28FFE584246A9D410042754E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28FFE583246A9D410042754E /* AppDelegate.swift */; };
+		28FFE586246A9D410042754E /* SelectGroupView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28FFE585246A9D410042754E /* SelectGroupView.swift */; };
+		28FFE588246A9D440042754E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 28FFE587246A9D440042754E /* Assets.xcassets */; };
+		28FFE58B246A9D440042754E /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 28FFE58A246A9D440042754E /* Preview Assets.xcassets */; };
+		28FFE59A246AA0290042754E /* LdapConnection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28FFE599246AA0290042754E /* LdapConnection.swift */; };
+		28FFE59D246AD41E0042754E /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28FFE59C246AD41E0042754E /* SettingsView.swift */; };
+		28FFE5A1246B07430042754E /* AlertService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28FFE5A0246B07430042754E /* AlertService.swift */; };
+		28FFE5A3246BF9BF0042754E /* GroupView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28FFE5A2246BF9BF0042754E /* GroupView.swift */; };
+		28FFE5A5246C1F4C0042754E /* SimpleUserView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28FFE5A4246C1F4C0042754E /* SimpleUserView.swift */; };
+		28FFE5A8246C24950042754E /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28FFE5A7246C24950042754E /* User.swift */; };
+		28FFE5AA246C24BF0042754E /* Group.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28FFE5A9246C24BF0042754E /* Group.swift */; };
+		28FFE5AE246C272C0042754E /* UserStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28FFE5AD246C272C0042754E /* UserStorage.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		2899E4CE246C3E5900EDB0DA /* AddMembers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddMembers.swift; sourceTree = "<group>"; };
+		289DF76C246D652E0022911D /* GroupStorage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupStorage.swift; sourceTree = "<group>"; };
+		289DF76F246D698E0022911D /* ErrorMessage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorMessage.swift; sourceTree = "<group>"; };
+		289DF775246D88AC0022911D /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		289DF777246D8F2A0022911D /* MainMenu.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainMenu.xib; sourceTree = "<group>"; };
+		289DF779246D96CE0022911D /* Settings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Settings.swift; sourceTree = "<group>"; };
+		289DF77B246D98460022911D /* SettingsService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsService.swift; sourceTree = "<group>"; };
+		28FFE580246A9D410042754E /* AD Groups for Mac.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "AD Groups for Mac.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		28FFE583246A9D410042754E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		28FFE585246A9D410042754E /* SelectGroupView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectGroupView.swift; sourceTree = "<group>"; };
+		28FFE587246A9D440042754E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		28FFE58A246A9D440042754E /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		28FFE58F246A9D440042754E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		28FFE590246A9D440042754E /* AD_Groups_for_Mac.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = AD_Groups_for_Mac.entitlements; sourceTree = "<group>"; };
+		28FFE599246AA0290042754E /* LdapConnection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LdapConnection.swift; sourceTree = "<group>"; };
+		28FFE59B246AB7320042754E /* AD Groups for MacRelease.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "AD Groups for MacRelease.entitlements"; sourceTree = "<group>"; };
+		28FFE59C246AD41E0042754E /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; usesTabs = 0; };
+		28FFE5A0246B07430042754E /* AlertService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertService.swift; sourceTree = "<group>"; };
+		28FFE5A2246BF9BF0042754E /* GroupView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupView.swift; sourceTree = "<group>"; };
+		28FFE5A4246C1F4C0042754E /* SimpleUserView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleUserView.swift; sourceTree = "<group>"; };
+		28FFE5A7246C24950042754E /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		28FFE5A9246C24BF0042754E /* Group.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Group.swift; sourceTree = "<group>"; };
+		28FFE5AD246C272C0042754E /* UserStorage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserStorage.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		28FFE57D246A9D410042754E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2842E249246DCF980053CCCA /* PerfectLDAP in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2842E24A246DD0750053CCCA /* Connection */ = {
+			isa = PBXGroup;
+			children = (
+				28FFE599246AA0290042754E /* LdapConnection.swift */,
+			);
+			path = Connection;
+			sourceTree = "<group>";
+		};
+		289DF76E246D696F0022911D /* Utility */ = {
+			isa = PBXGroup;
+			children = (
+				28FFE5A0246B07430042754E /* AlertService.swift */,
+				289DF76F246D698E0022911D /* ErrorMessage.swift */,
+				289DF77B246D98460022911D /* SettingsService.swift */,
+			);
+			path = Utility;
+			sourceTree = "<group>";
+		};
+		28FFE577246A9D410042754E = {
+			isa = PBXGroup;
+			children = (
+				28FFE582246A9D410042754E /* AD Groups for Mac */,
+				28FFE581246A9D410042754E /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		28FFE581246A9D410042754E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				28FFE580246A9D410042754E /* AD Groups for Mac.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		28FFE582246A9D410042754E /* AD Groups for Mac */ = {
+			isa = PBXGroup;
+			children = (
+				289DF76E246D696F0022911D /* Utility */,
+				28FFE5AC246C26DA0042754E /* LdapStorage */,
+				28FFE5AB246C26990042754E /* View */,
+				28FFE5A6246C24820042754E /* Model */,
+				28FFE59B246AB7320042754E /* AD Groups for MacRelease.entitlements */,
+				28FFE583246A9D410042754E /* AppDelegate.swift */,
+				28FFE587246A9D440042754E /* Assets.xcassets */,
+				28FFE58F246A9D440042754E /* Info.plist */,
+				28FFE590246A9D440042754E /* AD_Groups_for_Mac.entitlements */,
+				28FFE589246A9D440042754E /* Preview Content */,
+				289DF775246D88AC0022911D /* main.swift */,
+				289DF777246D8F2A0022911D /* MainMenu.xib */,
+			);
+			path = "AD Groups for Mac";
+			sourceTree = "<group>";
+		};
+		28FFE589246A9D440042754E /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				28FFE58A246A9D440042754E /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		28FFE5A6246C24820042754E /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				28FFE5A9246C24BF0042754E /* Group.swift */,
+				28FFE5A7246C24950042754E /* User.swift */,
+				289DF779246D96CE0022911D /* Settings.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		28FFE5AB246C26990042754E /* View */ = {
+			isa = PBXGroup;
+			children = (
+				2899E4CE246C3E5900EDB0DA /* AddMembers.swift */,
+				28FFE5A2246BF9BF0042754E /* GroupView.swift */,
+				28FFE585246A9D410042754E /* SelectGroupView.swift */,
+				28FFE59C246AD41E0042754E /* SettingsView.swift */,
+				28FFE5A4246C1F4C0042754E /* SimpleUserView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		28FFE5AC246C26DA0042754E /* LdapStorage */ = {
+			isa = PBXGroup;
+			children = (
+				2842E24A246DD0750053CCCA /* Connection */,
+				28FFE5AD246C272C0042754E /* UserStorage.swift */,
+				289DF76C246D652E0022911D /* GroupStorage.swift */,
+			);
+			path = LdapStorage;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		28FFE57F246A9D410042754E /* AD Groups for Mac */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 28FFE593246A9D440042754E /* Build configuration list for PBXNativeTarget "AD Groups for Mac" */;
+			buildPhases = (
+				28FFE57C246A9D410042754E /* Sources */,
+				28FFE57D246A9D410042754E /* Frameworks */,
+				28FFE57E246A9D410042754E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "AD Groups for Mac";
+			packageProductDependencies = (
+				2842E248246DCF980053CCCA /* PerfectLDAP */,
+			);
+			productName = "AD Groups for Mac";
+			productReference = 28FFE580246A9D410042754E /* AD Groups for Mac.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		28FFE578246A9D410042754E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1140;
+				LastUpgradeCheck = 1140;
+				ORGANIZATIONNAME = different.technology;
+				TargetAttributes = {
+					28FFE57F246A9D410042754E = {
+						CreatedOnToolsVersion = 11.4.1;
+					};
+				};
+			};
+			buildConfigurationList = 28FFE57B246A9D410042754E /* Build configuration list for PBXProject "AD Groups for Mac" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 28FFE577246A9D410042754E;
+			packageReferences = (
+				2842E247246DCF980053CCCA /* XCRemoteSwiftPackageReference "Perfect-LDAP" */,
+			);
+			productRefGroup = 28FFE581246A9D410042754E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				28FFE57F246A9D410042754E /* AD Groups for Mac */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		28FFE57E246A9D410042754E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				28FFE58B246A9D440042754E /* Preview Assets.xcassets in Resources */,
+				28FFE588246A9D440042754E /* Assets.xcassets in Resources */,
+				289DF778246D8F2A0022911D /* MainMenu.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		28FFE57C246A9D410042754E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				28FFE5AA246C24BF0042754E /* Group.swift in Sources */,
+				28FFE586246A9D410042754E /* SelectGroupView.swift in Sources */,
+				28FFE59D246AD41E0042754E /* SettingsView.swift in Sources */,
+				28FFE5A3246BF9BF0042754E /* GroupView.swift in Sources */,
+				289DF77C246D98460022911D /* SettingsService.swift in Sources */,
+				28FFE5AE246C272C0042754E /* UserStorage.swift in Sources */,
+				28FFE584246A9D410042754E /* AppDelegate.swift in Sources */,
+				28FFE5A8246C24950042754E /* User.swift in Sources */,
+				289DF770246D698E0022911D /* ErrorMessage.swift in Sources */,
+				28FFE5A5246C1F4C0042754E /* SimpleUserView.swift in Sources */,
+				289DF77A246D96CE0022911D /* Settings.swift in Sources */,
+				289DF76D246D652E0022911D /* GroupStorage.swift in Sources */,
+				289DF776246D88AC0022911D /* main.swift in Sources */,
+				2899E4CF246C3E5900EDB0DA /* AddMembers.swift in Sources */,
+				28FFE59A246AA0290042754E /* LdapConnection.swift in Sources */,
+				28FFE5A1246B07430042754E /* AlertService.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		28FFE591246A9D440042754E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		28FFE592246A9D440042754E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+			};
+			name = Release;
+		};
+		28FFE594246A9D440042754E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "AD Groups for Mac/AD_Groups_for_Mac.entitlements";
+				CODE_SIGN_IDENTITY = "-";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_ASSET_PATHS = "\"AD Groups for Mac/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = "AD Groups for Mac/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.different.technology.AD-Groups-for-Mac";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		28FFE595246A9D440042754E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "AD Groups for Mac/AD Groups for MacRelease.entitlements";
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_ASSET_PATHS = "\"AD Groups for Mac/Preview Content\"";
+				DEVELOPMENT_TEAM = "";
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = "AD Groups for Mac/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.different.technology.AD-Groups-for-Mac";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		28FFE57B246A9D410042754E /* Build configuration list for PBXProject "AD Groups for Mac" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				28FFE591246A9D440042754E /* Debug */,
+				28FFE592246A9D440042754E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		28FFE593246A9D440042754E /* Build configuration list for PBXNativeTarget "AD Groups for Mac" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				28FFE594246A9D440042754E /* Debug */,
+				28FFE595246A9D440042754E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		2842E247246DCF980053CCCA /* XCRemoteSwiftPackageReference "Perfect-LDAP" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Lagerregal/Perfect-LDAP";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		2842E248246DCF980053CCCA /* PerfectLDAP */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 2842E247246DCF980053CCCA /* XCRemoteSwiftPackageReference "Perfect-LDAP" */;
+			productName = PerfectLDAP;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = 28FFE578246A9D410042754E /* Project object */;
+}
