@@ -95,6 +95,18 @@ class AppDelegate: NSObject, NSApplicationDelegate {
             AlertService.showErrorMessage(message: "\(error)")
         }
     }
+    
+    @IBAction func openHelp(_ sender: Any) {
+        // Create the window and set the content view.
+        window = NSWindow(
+            contentRect: NSRect(x: 0, y: 0, width: 800, height: 600),
+            styleMask: [.titled, .closable, .miniaturizable, .resizable, .fullSizeContentView],
+            backing: .buffered, defer: false)
+        window.center()
+        window.setFrameAutosaveName("Help")
+        window.contentView = NSHostingView(rootView: HelpView())
+        window.makeKeyAndOrderFront(nil)
+    }
 }
 
 struct AppDelegate_Previews: PreviewProvider {

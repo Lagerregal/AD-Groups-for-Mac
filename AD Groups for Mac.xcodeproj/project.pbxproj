@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		28023D46246DDD2F00F4392E /* HelpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28023D45246DDD2F00F4392E /* HelpView.swift */; };
 		2842E249246DCF980053CCCA /* PerfectLDAP in Frameworks */ = {isa = PBXBuildFile; productRef = 2842E248246DCF980053CCCA /* PerfectLDAP */; };
 		2899E4CF246C3E5900EDB0DA /* AddMembers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2899E4CE246C3E5900EDB0DA /* AddMembers.swift */; };
 		289DF76D246D652E0022911D /* GroupStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 289DF76C246D652E0022911D /* GroupStorage.swift */; };
@@ -30,6 +31,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		28023D45246DDD2F00F4392E /* HelpView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelpView.swift; sourceTree = "<group>"; };
 		2899E4CE246C3E5900EDB0DA /* AddMembers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddMembers.swift; sourceTree = "<group>"; };
 		289DF76C246D652E0022911D /* GroupStorage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupStorage.swift; sourceTree = "<group>"; };
 		289DF76F246D698E0022911D /* ErrorMessage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorMessage.swift; sourceTree = "<group>"; };
@@ -146,6 +148,7 @@
 				28FFE585246A9D410042754E /* SelectGroupView.swift */,
 				28FFE59C246AD41E0042754E /* SettingsView.swift */,
 				28FFE5A4246C1F4C0042754E /* SimpleUserView.swift */,
+				28023D45246DDD2F00F4392E /* HelpView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -189,6 +192,9 @@
 		28FFE578246A9D410042754E /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				KnownAssetTags = (
+					New,
+				);
 				LastSwiftUpdateCheck = 1140;
 				LastUpgradeCheck = 1140;
 				ORGANIZATIONNAME = different.technology;
@@ -243,6 +249,7 @@
 				28FFE5A3246BF9BF0042754E /* GroupView.swift in Sources */,
 				289DF77C246D98460022911D /* SettingsService.swift in Sources */,
 				28FFE5AE246C272C0042754E /* UserStorage.swift in Sources */,
+				28023D46246DDD2F00F4392E /* HelpView.swift in Sources */,
 				28FFE584246A9D410042754E /* AppDelegate.swift in Sources */,
 				28FFE5A8246C24950042754E /* User.swift in Sources */,
 				289DF770246D698E0022911D /* ErrorMessage.swift in Sources */,

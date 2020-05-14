@@ -125,7 +125,7 @@
                         <items>
                             <menuItem title="Help" keyEquivalent="?" id="FKE-Sm-Kum">
                                 <connections>
-                                    <action selector="showHelp:" target="-1" id="y7X-2Q-9no"/>
+                                    <action selector="openHelp:" target="-1" id="yHV-79-CUe"/>
                                 </connections>
                             </menuItem>
                         </items>
