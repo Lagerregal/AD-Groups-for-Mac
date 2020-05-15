@@ -17,3 +17,11 @@ Insert your settings:
 ### Export and import settings
 
 You can export and import your settings (without credentials) to a json file to share them with others.
+
+
+## Troubleshooting
+
+You can reset all settings with the following command
+```sh
+defaults delete com.different.technology.AD-Groups-for-Mac
+```
