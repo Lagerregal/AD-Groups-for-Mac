@@ -18,7 +18,10 @@ class SettingsService {
 
     private init() {
         do {
-            self.settings = try self.getFromJson(jsonString: UserDefaults.standard.string(forKey: self.storageKey)!)
+            let settingsAsJson: String? = UserDefaults.standard.string(forKey: self.storageKey)
+            if (settingsAsJson != nil && settingsAsJson != "") {
+                self.settings = try self.getFromJson(jsonString: settingsAsJson!)
+            }
         } catch { }
 
         if (self.settings == nil) {
