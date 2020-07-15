@@ -12,11 +12,11 @@
       },
       {
         "package": "PerfectLDAP",
-        "repositoryURL": "https://github.com/Lagerregal/Perfect-LDAP",
+        "repositoryURL": "https://github.com/PerfectlySoft/Perfect-LDAP",
         "state": {
-          "branch": "master",
-          "revision": "6b6ab7a7cf113b094dc3a1f59dd7f709e2ce79bf",
-          "version": null
+          "branch": null,
+          "revision": "e351ef5b9497265f9498555820e408e57f00f950",
+          "version": "3.0.2"
         }
       },
       {

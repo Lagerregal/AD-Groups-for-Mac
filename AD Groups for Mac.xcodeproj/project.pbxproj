@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		28023D46246DDD2F00F4392E /* HelpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28023D45246DDD2F00F4392E /* HelpView.swift */; };
-		2842E249246DCF980053CCCA /* PerfectLDAP in Frameworks */ = {isa = PBXBuildFile; productRef = 2842E248246DCF980053CCCA /* PerfectLDAP */; };
 		2899E4CF246C3E5900EDB0DA /* AddMembers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2899E4CE246C3E5900EDB0DA /* AddMembers.swift */; };
 		289DF76D246D652E0022911D /* GroupStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 289DF76C246D652E0022911D /* GroupStorage.swift */; };
 		289DF770246D698E0022911D /* ErrorMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 289DF76F246D698E0022911D /* ErrorMessage.swift */; };
@@ -16,6 +15,7 @@
 		289DF778246D8F2A0022911D /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 289DF777246D8F2A0022911D /* MainMenu.xib */; };
 		289DF77A246D96CE0022911D /* Settings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 289DF779246D96CE0022911D /* Settings.swift */; };
 		289DF77C246D98460022911D /* SettingsService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 289DF77B246D98460022911D /* SettingsService.swift */; };
+		28DE8A8124BF049A00DA523B /* PerfectLDAP in Frameworks */ = {isa = PBXBuildFile; productRef = 28DE8A8024BF049A00DA523B /* PerfectLDAP */; };
 		28FFE584246A9D410042754E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28FFE583246A9D410042754E /* AppDelegate.swift */; };
 		28FFE586246A9D410042754E /* SelectGroupView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28FFE585246A9D410042754E /* SelectGroupView.swift */; };
 		28FFE588246A9D440042754E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 28FFE587246A9D440042754E /* Assets.xcassets */; };
@@ -62,7 +62,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2842E249246DCF980053CCCA /* PerfectLDAP in Frameworks */,
+				28DE8A8124BF049A00DA523B /* PerfectLDAP in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -87,11 +87,19 @@
 			path = Utility;
 			sourceTree = "<group>";
 		};
+		28DE8A7C24BF03A800DA523B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		28FFE577246A9D410042754E = {
 			isa = PBXGroup;
 			children = (
 				28FFE582246A9D410042754E /* AD Groups for Mac */,
 				28FFE581246A9D410042754E /* Products */,
+				28DE8A7C24BF03A800DA523B /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -180,7 +188,7 @@
 			);
 			name = "AD Groups for Mac";
 			packageProductDependencies = (
-				2842E248246DCF980053CCCA /* PerfectLDAP */,
+				28DE8A8024BF049A00DA523B /* PerfectLDAP */,
 			);
 			productName = "AD Groups for Mac";
 			productReference = 28FFE580246A9D410042754E /* AD Groups for Mac.app */;
@@ -214,7 +222,7 @@
 			);
 			mainGroup = 28FFE577246A9D410042754E;
 			packageReferences = (
-				2842E247246DCF980053CCCA /* XCRemoteSwiftPackageReference "Perfect-LDAP" */,
+				28DE8A7F24BF049A00DA523B /* XCRemoteSwiftPackageReference "Perfect-LDAP" */,
 			);
 			productRefGroup = 28FFE581246A9D410042754E /* Products */;
 			projectDirPath = "";
@@ -449,20 +457,20 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		2842E247246DCF980053CCCA /* XCRemoteSwiftPackageReference "Perfect-LDAP" */ = {
+		28DE8A7F24BF049A00DA523B /* XCRemoteSwiftPackageReference "Perfect-LDAP" */ = {
 			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/Lagerregal/Perfect-LDAP";
+			repositoryURL = "https://github.com/PerfectlySoft/Perfect-LDAP";
 			requirement = {
-				branch = master;
-				kind = branch;
+				kind = upToNextMajorVersion;
+				minimumVersion = 3.0.2;
 			};
 		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		2842E248246DCF980053CCCA /* PerfectLDAP */ = {
+		28DE8A8024BF049A00DA523B /* PerfectLDAP */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 2842E247246DCF980053CCCA /* XCRemoteSwiftPackageReference "Perfect-LDAP" */;
+			package = 28DE8A7F24BF049A00DA523B /* XCRemoteSwiftPackageReference "Perfect-LDAP" */;
 			productName = PerfectLDAP;
 		};
 /* End XCSwiftPackageProductDependency section */
