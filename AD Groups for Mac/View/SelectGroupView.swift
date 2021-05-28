@@ -9,22 +9,37 @@
 import SwiftUI
 
 struct SelectGroupView: View {
+    public static let VIEW_SETTINGS = 1
+    
     @State private var groups: [Group] = []
     @State private var currentUser: User?
+    @State public var currentView: Int? = 0
 
     var body: some View {
         NavigationView {
             VStack {
-                Button(action: openSettings) {
-                    Text("Settings")
-                }
+                NavigationLink(
+                    "Settings",
+                    destination: SettingsView(),
+                    tag: SelectGroupView.VIEW_SETTINGS,
+                    selection: $currentView
+                )
                 Text("Welcome: " + (currentUser?.displayName ?? "not logged in"))
+                Divider()
                 List(groups, id: \.dn) { group in
-                    NavigationLink(group.name, destination: GroupView(group: group).frame(maxWidth: .infinity, alignment: .top))
+                    NavigationLink(
+                        group.name,
+                        destination: GroupView(group: group)
+                            .frame(maxWidth: .infinity, alignment: .top),
+                        tag: group.name.hashValue,
+                        selection: $currentView
+                    )
                 }
             }
-            .padding(10)
-            .frame(minWidth: 300, maxWidth: 300, minHeight: 500)
+                .frame(minWidth: 250, minHeight: 400)
+            StartView()
+                .padding(10)
+                .frame(minWidth: 300, maxWidth: 300, minHeight: 500)
         }
         .onAppear(perform: {
             self.loadGroups()
@@ -50,14 +65,14 @@ struct SelectGroupView: View {
                 self.groups.append(GroupStorage.shared.getGroupByRawData(dn: groupDn, data: groupData))
             }
         } catch {
-            print("connection error")
-            AlertService.showErrorMessage(message: "\(error)")
-            AlertService.getCurrentWindow().contentView = NSHostingView(rootView: SettingsView())
+            if ((SettingsService.shared.settings?.ldapUrl.isEmpty) != nil) {
+                print("No settings found")
+            } else {
+                print("connection error")
+                AlertService.showErrorMessage(message: "\(error)")
+            }
+            currentView = SelectGroupView.VIEW_SETTINGS
         }
-    }
-
-    private func openSettings() {
-        AlertService.getCurrentWindow().contentView = NSHostingView(rootView: SettingsView())
     }
 
     private func getFirstAttributeOfDn(fullDn: String, attribute: String) -> String? {

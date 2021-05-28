@@ -19,7 +19,7 @@ struct HelpView: View {
                 Text("https://github.com/different-technology/AD-Groups-for-Mac")
             }
             Divider().padding(30)
-            Text("Copyright © 2020 different.technology")
+            Text("Copyright © 2020 different.technology by Markus Hölzle")
             Button(action: {
                 guard let url = URL(string: "https://different.technology") else { return }
                 NSWorkspace.shared.open(url)

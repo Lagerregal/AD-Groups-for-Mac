@@ -1,0 +1,81 @@
+
+/* Class = "NSMenuItem"; title = "AD Groups for Mac"; ObjectID = "1Xt-HY-uBw"; */
+"1Xt-HY-uBw.title" = "AD Groups for Mac";
+
+/* Class = "NSMenuItem"; title = "Quit"; ObjectID = "4sb-4s-VLi"; */
+"4sb-4s-VLi.title" = "Beenden";
+
+/* Class = "NSMenuItem"; title = "Edit"; ObjectID = "5QF-Oa-p0T"; */
+"5QF-Oa-p0T.title" = "Bearbeiten";
+
+/* Class = "NSMenuItem"; title = "About \"AD Groups for Mac\""; ObjectID = "5kV-Vb-QxS"; */
+"5kV-Vb-QxS.title" = "Über \"AD Groups for Mac\"";
+
+/* Class = "NSMenuItem"; title = "Redo"; ObjectID = "6dh-zS-Vam"; */
+"6dh-zS-Vam.title" = "Wiederholen";
+
+/* Class = "NSMenu"; title = "Main Menu"; ObjectID = "AYu-sK-qS6"; */
+"AYu-sK-qS6.title" = "Hauptmenü";
+
+/* Class = "NSMenuItem"; title = "Preferences…"; ObjectID = "BOF-NM-1cW"; */
+"BOF-NM-1cW.title" = "Einstellungen"
+
+/* Class = "NSMenu"; title = "Help"; ObjectID = "F2S-fz-NVQ"; */
+"F2S-fz-NVQ.title" = "Hilfe";
+
+/* Class = "NSMenuItem"; title = "Help"; ObjectID = "FKE-Sm-Kum"; */
+"FKE-Sm-Kum.title" = "Hilfe";
+
+/* Class = "NSMenuItem"; title = "Import settings"; ObjectID = "IAo-SY-fd9"; */
+"IAo-SY-fd9.title" = "Einstellungen importieren";
+
+/* Class = "NSMenuItem"; title = "Show All"; ObjectID = "Kd2-mp-pUS"; */
+"Kd2-mp-pUS.title" = "Alle einblenden";
+
+/* Class = "NSMenuItem"; title = "Services"; ObjectID = "NMo-om-nkz"; */
+"NMo-om-nkz.title" = "Dienste";
+
+/* Class = "NSMenuItem"; title = "Hide \"AD Groups for Mac\""; ObjectID = "Olw-nP-bQN"; */
+"Olw-nP-bQN.title" = "\"AD Groups for Mac\" ausblenden";
+
+/* Class = "NSMenuItem"; title = "Select All"; ObjectID = "Ruw-6m-B2m"; */
+"Ruw-6m-B2m.title" = "Alle einblenden";
+
+/* Class = "NSMenuItem"; title = "Hide Others"; ObjectID = "Vdr-fp-XzO"; */
+"Vdr-fp-XzO.title" = "Andere ausblenden";
+
+/* Class = "NSMenu"; title = "Edit"; ObjectID = "W48-6f-4Dl"; */
+"W48-6f-4Dl.title" = "Bearbeiten";
+
+/* Class = "NSMenu"; title = "File"; ObjectID = "bib-Uj-vzu"; */
+"bib-Uj-vzu.title" = "Datei";
+
+/* Class = "NSMenuItem"; title = "File"; ObjectID = "dMs-cI-mzQ"; */
+"dMs-cI-mzQ.title" = "Datei";
+
+/* Class = "NSMenuItem"; title = "Undo"; ObjectID = "dRJ-4n-Yzg"; */
+"dRJ-4n-Yzg.title" = "Rückgängig";
+
+/* Class = "NSMenuItem"; title = "Paste"; ObjectID = "gVA-U4-sdL"; */
+"gVA-U4-sdL.title" = "Einfügen";
+
+/* Class = "NSMenu"; title = "Services"; ObjectID = "hz9-B4-Xy5"; */
+"hz9-B4-Xy5.title" = "Dienste";
+
+/* Class = "NSMenuItem"; title = "Delete"; ObjectID = "pa3-QI-u2k"; */
+"pa3-QI-u2k.title" = "Löschen";
+
+/* Class = "NSMenuItem"; title = "Export settings"; ObjectID = "pxx-59-PXV"; */
+"pxx-59-PXV.title" = "Einstellungen exportieren";
+
+/* Class = "NSMenu"; title = "AD Groups for Mac"; ObjectID = "uQy-DD-JDr"; */
+"uQy-DD-JDr.title" = "AD Groups for Mac";
+
+/* Class = "NSMenuItem"; title = "Cut"; ObjectID = "uRl-iY-unG"; */
+"uRl-iY-unG.title" = "Ausschneiden";
+
+/* Class = "NSMenuItem"; title = "Help"; ObjectID = "wpr-3q-Mcd"; */
+"wpr-3q-Mcd.title" = "Hilfe";
+
+/* Class = "NSMenuItem"; title = "Copy"; ObjectID = "x3v-GG-iWU"; */
+"x3v-GG-iWU.title" = "Kopieren";

@@ -19,14 +19,14 @@ struct User: Hashable {
     var department: String = ""
     
     func dumpInfo() -> String {
-        return "name: \(name)\n" +
-            "displayName: \(displayName)\n" +
-            "company: \(company)\n" +
-            "mail: \(mail)\n" +
-            "mobile: \(mobile)\n" +
-            "location: \(location)\n" +
-            "department: \(department)\n" +
-            "dn: \(dn)"
+        return "Name: \(name)\n" +
+            "Display Name: \(displayName)\n" +
+            "Company: \(company)\n" +
+            "Email: \(mail)\n" +
+            "Mobile: \(mobile)\n" +
+            "Location: \(location)\n" +
+            "Department: \(department)\n" +
+            "DN: \(dn)"
     }
 
     func hash(into hasher: inout Hasher) {

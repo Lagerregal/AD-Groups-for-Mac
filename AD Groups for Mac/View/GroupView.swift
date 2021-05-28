@@ -45,7 +45,7 @@ struct GroupView: View {
     
     func loadGroupMembers() {
         do {
-            print("loadGroupMembers")
+            print("loadGroupMembers " + self.group.dn)
             self.group.members = try LdapConnection.shared.initConnection().findGroupMembersDn(groupDn: self.group.dn)
         } catch {
             print("connection error")

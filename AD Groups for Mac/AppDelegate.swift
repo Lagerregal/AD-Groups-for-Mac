@@ -25,6 +25,7 @@ class AppDelegate: NSObject, NSApplicationDelegate {
             styleMask: [.titled, .closable, .miniaturizable, .resizable, .fullSizeContentView],
             backing: .buffered, defer: false)
         window.center()
+        window.title = "AD Groups for Mac"
         window.setFrameAutosaveName("AD Groups for Mac")
         window.contentView = NSHostingView(rootView: SelectGroupView())
         window.makeKeyAndOrderFront(nil)
@@ -35,7 +36,9 @@ class AppDelegate: NSObject, NSApplicationDelegate {
     }
     
     @IBAction func openSettings(_ sender: Any) {
-        AlertService.getCurrentWindow().contentView = NSHostingView(rootView: SettingsView())
+        AlertService.getCurrentWindow().contentView = NSHostingView(
+            rootView: SelectGroupView(currentView: SelectGroupView.VIEW_SETTINGS)
+        )
     }
     
     @IBAction func openDocument(_ sender: Any) {
@@ -54,7 +57,7 @@ class AppDelegate: NSObject, NSApplicationDelegate {
                     let jsonSettings = try String(contentsOf: result!, encoding: .utf8)
                     let settings = try SettingsService.shared.getFromJson(jsonString: jsonSettings)
                     try SettingsService.shared.persist(settings: settings)
-                    AlertService.getCurrentWindow().contentView = NSHostingView(rootView: SettingsView())
+                    openSettings(sender)
                 }
             } else {
                 // User clicked on "Cancel"
