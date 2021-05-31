@@ -1,11 +1,52 @@
-/* 
-  Localizable.strings
-  AD Groups for Mac
 
-  Created by Markus Hölzle on 28.05.21.
-  Copyright © 2021 different.technology. All rights reserved.
-*/
+// General
+"general.title" = "AD Groups for Mac";
+"general.subtitle" = "Manage your Active Directory groups.";
+"general.copyright" = "Copyright © 2020 different.technology by Markus Hölzle";
+"general.openJson" = "Choose a .json file";
+"general.exportJson" = "Export settings";
+"general.helpTitle" = "Help";
 
-"Import settings" = "Einstellungen importieren";
+// AddMembers View
+"view.addMembers.searchForUsers" = "1. Search for users";
+"view.addMembers.userId" = "User ID";
+"view.addMembers.or" = "or";
+"view.addMembers.name" = "Name";
+"view.addMembers.search" = "Search";
+"view.addMembers.pickUser" = "2. Pick user";
+"view.addMembers.selectUser" = "Select user: ";
+"view.addMembers.add" = "Add";
+"view.addMembers.cancel" = "Cancel";
 
-"Export settings" = "Einstellungen exportieren";
+// GroupView
+"view.group.group" = "Group: ";
+"view.group.dn" = "DN: ";
+"view.group.managedBy" = "Managed By: ";
+"view.group.description" = "Description: ";
+"view.group.members" = "Members: ";
+"view.group.addMember" = "+ add member";
+
+// SelectGroupView
+"view.selectGroup.settings" = "Settings";
+"view.selectGroup.welcome %@" = "Welcome: %@";
+"view.selectGroup.notLoggedIn" = "not logged in";
+"view.selectGroup.noUserFound" = "No user found for: %@";
+
+// SettingsView
+"view.settings.settings" = "Settings";
+"view.settings.ldapSettings" = "LDAP Settings";
+"view.settings.ldapUrl" = "LDAP URL";
+"view.settings.ldapBase" = "LDAP Base";
+"view.settings.ldapUser" = "LDAP User";
+"view.settings.credentials" = "Credentials";
+"view.settings.loginName" = "Login Name";
+"view.settings.loginPassword" = "Login Password";
+"view.settings.save" = "Save";
+"view.settings.importSettings" = "Import settings";
+"view.settings.exportSettings" = "Export settings";
+"view.settings.pleaseEnterYourPassword" = "Please enter your password";
+"view.settings.ldapPrefixMessage" = "LDAP URL has to start with ldaps:// or ldap://";
+
+// HelpView
+"view.help.openHelp" = "Open help:";
+"view.help.helpButton" = "https://github.com/different-technology/AD-Groups-for-Mac";

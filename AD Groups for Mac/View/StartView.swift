@@ -14,9 +14,9 @@ struct StartView: View {
             Text("")
                 .font(.footnote)
                 .frame(maxHeight: .infinity, alignment: .top)
-            Text("AD Groups for Mac").font(.largeTitle)
-            Text("Manage your Active Directory groups.")
-            Text("Copyright © 2020 different.technology by Markus Hölzle")
+            Text(LocalizedStringKey("general.title")).font(.largeTitle)
+            Text(LocalizedStringKey("general.subtitle"))
+            Text(LocalizedStringKey("general.copyright"))
                 .font(.footnote)
                 .frame(maxHeight: .infinity, alignment: .bottom)
         }

@@ -9,7 +9,7 @@
 /* Begin PBXBuildFile section */
 		28023D46246DDD2F00F4392E /* HelpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28023D45246DDD2F00F4392E /* HelpView.swift */; };
 		280BEDE726613B4D00F0F013 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 280BEDE926613B4D00F0F013 /* MainMenu.xib */; };
-		28667D0B26613743003C0472 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 28667D0926613743003C0472 /* Localizable.strings */; };
+		288460CF2661411F007EC3ED /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 288460CD2661411F007EC3ED /* Localizable.strings */; };
 		2899E4CF246C3E5900EDB0DA /* AddMembers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2899E4CE246C3E5900EDB0DA /* AddMembers.swift */; };
 		289DF76D246D652E0022911D /* GroupStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 289DF76C246D652E0022911D /* GroupStorage.swift */; };
 		289DF770246D698E0022911D /* ErrorMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 289DF76F246D698E0022911D /* ErrorMessage.swift */; };
@@ -34,9 +34,10 @@
 
 /* Begin PBXFileReference section */
 		28023D45246DDD2F00F4392E /* HelpView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelpView.swift; sourceTree = "<group>"; };
-		28667D0A26613743003C0472 /* de */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = de; path = Localizable.strings; sourceTree = "<group>"; };
 		286954D026613B800071C8D6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
-		286954D126613BCB0071C8D6 /* de */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = de; path = de.lproj/MainMenu.strings; sourceTree = "<group>"; };
+		288460CE2661411F007EC3ED /* Base */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; name = Base; path = Base.lproj/Localizable.strings; sourceTree = "<group>"; };
+		288460D12661417B007EC3ED /* de */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; name = de; path = de.lproj/Localizable.strings; sourceTree = "<group>"; };
+		288460D42661426A007EC3ED /* de */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; name = de; path = de.lproj/MainMenu.strings; sourceTree = "<group>"; };
 		2899E4CE246C3E5900EDB0DA /* AddMembers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddMembers.swift; sourceTree = "<group>"; };
 		289DF76C246D652E0022911D /* GroupStorage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupStorage.swift; sourceTree = "<group>"; };
 		289DF76F246D698E0022911D /* ErrorMessage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorMessage.swift; sourceTree = "<group>"; };
@@ -82,14 +83,6 @@
 			path = Connection;
 			sourceTree = "<group>";
 		};
-		28667D082661370F003C0472 /* de.lproj */ = {
-			isa = PBXGroup;
-			children = (
-				28667D0926613743003C0472 /* Localizable.strings */,
-			);
-			path = de.lproj;
-			sourceTree = "<group>";
-		};
 		289DF76E246D696F0022911D /* Utility */ = {
 			isa = PBXGroup;
 			children = (
@@ -111,8 +104,8 @@
 			isa = PBXGroup;
 			children = (
 				28FFE582246A9D410042754E /* AD Groups for Mac */,
-				28FFE581246A9D410042754E /* Products */,
 				28DE8A7C24BF03A800DA523B /* Frameworks */,
+				28FFE581246A9D410042754E /* Products */,
 			);
 			sourceTree = "<group>";
 		};
@@ -127,19 +120,19 @@
 		28FFE582246A9D410042754E /* AD Groups for Mac */ = {
 			isa = PBXGroup;
 			children = (
-				28667D082661370F003C0472 /* de.lproj */,
-				289DF76E246D696F0022911D /* Utility */,
-				28FFE5AC246C26DA0042754E /* LdapStorage */,
-				28FFE5AB246C26990042754E /* View */,
-				28FFE5A6246C24820042754E /* Model */,
 				28FFE59B246AB7320042754E /* AD Groups for MacRelease.entitlements */,
-				28FFE583246A9D410042754E /* AppDelegate.swift */,
-				28FFE587246A9D440042754E /* Assets.xcassets */,
-				28FFE58F246A9D440042754E /* Info.plist */,
 				28FFE590246A9D440042754E /* AD_Groups_for_Mac.entitlements */,
-				28FFE589246A9D440042754E /* Preview Content */,
+				28FFE58F246A9D440042754E /* Info.plist */,
+				28FFE583246A9D410042754E /* AppDelegate.swift */,
 				289DF775246D88AC0022911D /* main.swift */,
+				28FFE587246A9D440042754E /* Assets.xcassets */,
+				28FFE5AC246C26DA0042754E /* LdapStorage */,
 				280BEDE926613B4D00F0F013 /* MainMenu.xib */,
+				28FFE5A6246C24820042754E /* Model */,
+				28FFE589246A9D440042754E /* Preview Content */,
+				289DF76E246D696F0022911D /* Utility */,
+				28FFE5AB246C26990042754E /* View */,
+				288460CD2661411F007EC3ED /* Localizable.strings */,
 			);
 			path = "AD Groups for Mac";
 			sourceTree = "<group>";
@@ -219,7 +212,7 @@
 					New,
 				);
 				LastSwiftUpdateCheck = 1140;
-				LastUpgradeCheck = 1140;
+				LastUpgradeCheck = 1250;
 				ORGANIZATIONNAME = different.technology;
 				TargetAttributes = {
 					28FFE57F246A9D410042754E = {
@@ -254,8 +247,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				288460CF2661411F007EC3ED /* Localizable.strings in Resources */,
 				28FFE58B246A9D440042754E /* Preview Assets.xcassets in Resources */,
-				28667D0B26613743003C0472 /* Localizable.strings in Resources */,
 				28FFE588246A9D440042754E /* Assets.xcassets in Resources */,
 				280BEDE726613B4D00F0F013 /* MainMenu.xib in Resources */,
 			);
@@ -296,15 +289,16 @@
 			isa = PBXVariantGroup;
 			children = (
 				286954D026613B800071C8D6 /* Base */,
-				286954D126613BCB0071C8D6 /* de */,
+				288460D42661426A007EC3ED /* de */,
 			);
 			name = MainMenu.xib;
 			sourceTree = "<group>";
 		};
-		28667D0926613743003C0472 /* Localizable.strings */ = {
+		288460CD2661411F007EC3ED /* Localizable.strings */ = {
 			isa = PBXVariantGroup;
 			children = (
-				28667D0A26613743003C0472 /* de */,
+				288460CE2661411F007EC3ED /* Base */,
+				288460D12661417B007EC3ED /* de */,
 			);
 			name = Localizable.strings;
 			sourceTree = "<group>";
@@ -316,6 +310,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -338,6 +333,7 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
@@ -362,7 +358,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				MACOSX_DEPLOYMENT_TARGET = 11.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -376,6 +372,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -398,6 +395,7 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
@@ -416,7 +414,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				MACOSX_DEPLOYMENT_TARGET = 11.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = macosx;
@@ -442,7 +440,7 @@
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
-				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				MACOSX_DEPLOYMENT_TARGET = 11.0;
 				MARKETING_VERSION = 1.1;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.different.technology.AD-Groups-for-Mac";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -461,13 +459,14 @@
 				CURRENT_PROJECT_VERSION = 2;
 				DEVELOPMENT_ASSET_PATHS = "\"AD Groups for Mac/Preview Content\"";
 				DEVELOPMENT_TEAM = "";
+				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = "AD Groups for Mac/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
-				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				MACOSX_DEPLOYMENT_TARGET = 11.0;
 				MARKETING_VERSION = 1.1;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.different.technology.AD-Groups-for-Mac";
 				PRODUCT_NAME = "$(TARGET_NAME)";

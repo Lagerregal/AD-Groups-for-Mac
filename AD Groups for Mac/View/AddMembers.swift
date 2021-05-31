@@ -26,18 +26,18 @@ struct AddMembers: View {
 
     var body: some View {
         VStack {
-            Text("1. Search for users").bold()
+            Text(LocalizedStringKey("view.addMembers.searchForUsers")).bold()
             HStack {
-                TextField("User ID", text: $userId, onCommit: searchUser)
-                Text("or")
-                TextField("Name", text: $searchQuery, onCommit: searchUser)
+                TextField(LocalizedStringKey("view.addMembers.userId"), text: $userId, onCommit: searchUser)
+                Text(LocalizedStringKey("view.addMembers.or"))
+                TextField(LocalizedStringKey("view.addMembers.name"), text: $searchQuery, onCommit: searchUser)
             }
             Button(action: searchUser) {
-                Text("Search")
+                Text(LocalizedStringKey("view.addMembers.search"))
             }.focusable()
             Divider()
-            Text("2. Pick user").bold()
-            Picker(selection: self.$selectedUserDn, label: Text("Select user: ")) {
+            Text(LocalizedStringKey("view.addMembers.pickUser")).bold()
+            Picker(selection: self.$selectedUserDn, label: Text(LocalizedStringKey("view.addMembers.selectUser"))) {
                 ForEach(self.foundUsers, id: \.dn) { user in
                     Text("\(user.displayName)(\(user.name))(\(user.company))").tag(user.dn)
                 }
@@ -56,12 +56,12 @@ struct AddMembers: View {
                         AlertService.showErrorMessage(message: "\(error)")
                     }
                 }) {
-                    Text("Add")
+                    Text(LocalizedStringKey("view.addMembers.add"))
                 }.focusable()
                 Button(action: {
                     self.isPresented.toggle()
                 }) {
-                    Text("Cancel")
+                    Text(LocalizedStringKey("view.addMembers.cancel"))
                 }.focusable()
             }
         }

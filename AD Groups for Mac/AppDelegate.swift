@@ -25,8 +25,8 @@ class AppDelegate: NSObject, NSApplicationDelegate {
             styleMask: [.titled, .closable, .miniaturizable, .resizable, .fullSizeContentView],
             backing: .buffered, defer: false)
         window.center()
-        window.title = "AD Groups for Mac"
-        window.setFrameAutosaveName("AD Groups for Mac")
+        window.title = NSLocalizedString("general.title", comment: "")
+        window.setFrameAutosaveName(NSLocalizedString("general.title", comment: ""))
         window.contentView = NSHostingView(rootView: SelectGroupView())
         window.makeKeyAndOrderFront(nil)
     }
@@ -44,7 +44,7 @@ class AppDelegate: NSObject, NSApplicationDelegate {
     @IBAction func openDocument(_ sender: Any) {
         do {
             let dialog = NSOpenPanel();
-            dialog.title                   = "Choose a .json file"
+            dialog.title                   = NSLocalizedString("general.openJson", comment: "")
             dialog.showsResizeIndicator    = true
             dialog.canChooseDirectories    = false
             dialog.canCreateDirectories    = true
@@ -78,7 +78,7 @@ class AppDelegate: NSObject, NSApplicationDelegate {
             dateFormatter.dateFormat = "Y-MM-dd-HH-mm-ss"
             
             let dialog = NSSavePanel();
-            dialog.title                   = "Export .json file"
+            dialog.title                   = NSLocalizedString("general.exportJson", comment: "")
             dialog.nameFieldStringValue    = "export_ad-groups-for-mac_" + (dateFormatter.string(for: Date()) ?? "")
             dialog.showsResizeIndicator    = true
             dialog.canCreateDirectories    = true;
@@ -106,7 +106,7 @@ class AppDelegate: NSObject, NSApplicationDelegate {
             styleMask: [.titled, .closable, .miniaturizable, .resizable, .fullSizeContentView],
             backing: .buffered, defer: false)
         window.center()
-        window.setFrameAutosaveName("Help")
+        window.setFrameAutosaveName(NSLocalizedString("general.helpTitle", comment: ""))
         window.contentView = NSHostingView(rootView: HelpView())
         window.makeKeyAndOrderFront(nil)
     }

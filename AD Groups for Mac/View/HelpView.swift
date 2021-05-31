@@ -11,17 +11,21 @@ import SwiftUI
 struct HelpView: View {
     var body: some View {
         VStack{
-            Text("Open help:").bold()
+            Text(LocalizedStringKey("view.help.openHelp")).bold()
             Button(action: {
-                guard let url = URL(string: "https://github.com/different-technology/AD-Groups-for-Mac") else { return }
+                guard let url = URL(
+                        string: "https://github.com/different-technology/AD-Groups-for-Mac"
+                ) else { return }
                 NSWorkspace.shared.open(url)
             }) {
-                Text("https://github.com/different-technology/AD-Groups-for-Mac")
+                Text(LocalizedStringKey("view.help.helpButton"))
             }
             Divider().padding(30)
-            Text("Copyright © 2020 different.technology by Markus Hölzle")
+            Text(LocalizedStringKey("general.copyright"))
             Button(action: {
-                guard let url = URL(string: "https://different.technology") else { return }
+                guard let url = URL(
+                        string: "https://different.technology"
+                ) else { return }
                 NSWorkspace.shared.open(url)
             }) {
                 Text("https://different.technology")

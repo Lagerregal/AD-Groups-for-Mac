@@ -1,11 +1,52 @@
-/* 
-  Localizable.strings
-  AD Groups for Mac
 
-  Created by Markus Hölzle on 28.05.21.
-  Copyright © 2021 different.technology. All rights reserved.
-*/
+// General
+"general.title" = "AD Groups for Mac";
+"general.subtitle" = "Manage your Active Directory groups.";
+"general.copyright" = "Copyright © 2020 different.technology by Markus Hölzle";
+"general.openJson" = "Bitte .json Datei auswählen";
+"general.exportJson" = "Einstellungen exportieren";
+"general.helpTitle" = "Hilfe";
 
-"Import settings" = "Einstellungen importieren";
+// AddMembers View
+"view.addMembers.searchForUsers" = "1. Benutzer suchen";
+"view.addMembers.userId" = "Benutzer ID";
+"view.addMembers.or" = "oder";
+"view.addMembers.name" = "Name";
+"view.addMembers.search" = "Suchen";
+"view.addMembers.pickUser" = "2. Benutzer auswählen";
+"view.addMembers.selectUser" = "Benutzer: ";
+"view.addMembers.add" = "Hinzufügen";
+"view.addMembers.cancel" = "Abbrechen";
 
-"Export settings" = "Einstellungen exportieren";
+// GroupView
+"view.group.group" = "Gruppe: ";
+"view.group.dn" = "DN: ";
+"view.group.managedBy" = "Verwaltet von: ";
+"view.group.description" = "Beschreibung: ";
+"view.group.members" = "Mitglieder: ";
+"view.group.addMember" = "+ Mitglied hinzufügen";
+
+// SelectGroupView
+"view.selectGroup.settings" = "Einstellungen";
+"view.selectGroup.welcome %@" = "Willkommen: %@";
+"view.selectGroup.notLoggedIn" = "nicht eingeloggt";
+"view.selectGroup.noUserFound" = "Kein Benutzer gefunden für: %@";
+
+// SettingsView
+"view.settings.settings" = "Einstellungen";
+"view.settings.ldapSettings" = "LDAP Einstellungen";
+"view.settings.ldapUrl" = "LDAP URL";
+"view.settings.ldapBase" = "LDAP Base";
+"view.settings.ldapUser" = "LDAP Benutzer";
+"view.settings.credentials" = "Anmeldeinformationen";
+"view.settings.loginName" = "Login Name";
+"view.settings.loginPassword" = "Login Passwort";
+"view.settings.save" = "Speichern";
+"view.settings.importSettings" = "Einstellungen importieren";
+"view.settings.exportSettings" = "Einstellungen exportieren";
+"view.settings.pleaseEnterYourPassword" = "Bitte Passwort eingeben";
+"view.settings.ldapPrefixMessage" = "LDAP URL muss mit ldaps:// oder ldap:// beginnen";
+
+// HelpView
+"view.help.openHelp" = "Hilfe öffnen:";
+"view.help.helpButton" = "https://github.com/different-technology/AD-Groups-for-Mac";

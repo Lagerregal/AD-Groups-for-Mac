@@ -7,7 +7,7 @@
 //
 
 import SwiftUI
-
+    
 struct SelectGroupView: View {
     public static let VIEW_SETTINGS = 1
     
@@ -18,13 +18,11 @@ struct SelectGroupView: View {
     var body: some View {
         NavigationView {
             VStack {
-                NavigationLink(
-                    "Settings",
-                    destination: SettingsView(),
-                    tag: SelectGroupView.VIEW_SETTINGS,
-                    selection: $currentView
+                Text(
+                    (currentUser != nil && !currentUser!.displayName.isEmpty) ? (
+                        LocalizedStringKey("view.selectGroup.welcome \(currentUser!.displayName)")
+                    ) : LocalizedStringKey("view.selectGroup.notLoggedIn")
                 )
-                Text("Welcome: " + (currentUser?.displayName ?? "not logged in"))
                 Divider()
                 List(groups, id: \.dn) { group in
                     NavigationLink(
@@ -35,6 +33,18 @@ struct SelectGroupView: View {
                         selection: $currentView
                     )
                 }
+                Spacer()
+                NavigationLink(
+                    destination: SettingsView(),
+                    tag: SelectGroupView.VIEW_SETTINGS,
+                    selection: $currentView
+                ) {
+                    Label(
+                        LocalizedStringKey("view.selectGroup.settings"),
+                        systemImage: "gearshape"
+                    )
+                }.padding(10)
+                
             }
                 .frame(minWidth: 250, minHeight: 400)
             StartView()
@@ -52,7 +62,10 @@ struct SelectGroupView: View {
             let currentUserName = SettingsService.shared.settings!.ldapUser
             let rawUsers = try LdapConnection.shared.initConnection().findUsersByCn(name: currentUserName)
             if (rawUsers.count < 1) {
-                throw ErrorMessage.runtimeError("No user found for: " + currentUserName)
+                throw ErrorMessage.runtimeError(NSLocalizedString(
+                    "view.settings.noUserFound \(currentUserName)",
+                    comment: ""
+                ))
             }
             let rawUser = rawUsers.first
             self.currentUser = UserStorage.shared.getUserByRawData(dn: rawUser!.key, data: rawUser!.value)

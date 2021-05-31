@@ -14,20 +14,21 @@ struct GroupView: View {
     
     var body: some View {
         VStack(alignment: .leading) {
-            Text("Group: ").bold() + Text(group.name)
+            Text(LocalizedStringKey("view.group.group")).bold() + Text(group.name)
             Divider()
-            Text("DN: ").bold() + Text(group.dn)
+            Text(LocalizedStringKey("view.group.dn")).bold() + Text(group.dn)
             Divider()
-            Text("Managed By: ").bold() + Text(group.managedBy)
+            Text(LocalizedStringKey("view.group.managedBy")).bold() + Text(group.managedBy)
             Divider()
-            Text("Description: ").bold() + Text(group.description)
+            Text(LocalizedStringKey("view.group.description")).bold() + Text(group.description)
             Divider()
             HStack {
-                Text("Members: ").bold()
+                Text(LocalizedStringKey("view.group.members")).bold()
                 Button(action: {
                     self.showAddMembersModal.toggle()
                 }) {
-                    Text("+ add member")
+                    Label(LocalizedStringKey("view.group.addMember"), systemImage: "paperplane")
+                            .font(.title)
                 }.sheet(isPresented: $showAddMembersModal) {
                     AddMembers(group: self.group, isPresented: self.$showAddMembersModal, groupView: self)
                 }
