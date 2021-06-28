@@ -2,7 +2,7 @@
 // General
 "general.title" = "AD Groups for Mac";
 "general.subtitle" = "Manage your Active Directory groups.";
-"general.copyright" = "Copyright © 2020 different.technology by Markus Hölzle";
+"general.copyright" = "Copyright © 2021 different.technology by Markus Hölzle";
 "general.openJson" = "Choose a .json file";
 "general.exportJson" = "Export settings";
 "general.helpTitle" = "Help";
@@ -24,7 +24,7 @@
 "view.group.managedBy" = "Managed By: ";
 "view.group.description" = "Description: ";
 "view.group.members" = "Members: ";
-"view.group.addMember" = "+ add member";
+"view.group.addMember" = "add member";
 
 // SelectGroupView
 "view.selectGroup.settings" = "Settings";

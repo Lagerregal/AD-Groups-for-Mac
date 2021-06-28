@@ -27,8 +27,7 @@ struct GroupView: View {
                 Button(action: {
                     self.showAddMembersModal.toggle()
                 }) {
-                    Label(LocalizedStringKey("view.group.addMember"), systemImage: "paperplane")
-                            .font(.title)
+                    Label(LocalizedStringKey("view.group.addMember"), systemImage: "plus")
                 }.sheet(isPresented: $showAddMembersModal) {
                     AddMembers(group: self.group, isPresented: self.$showAddMembersModal, groupView: self)
                 }
