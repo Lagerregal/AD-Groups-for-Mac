@@ -71,8 +71,7 @@ class AppDelegate: NSObject, NSApplicationDelegate {
     @IBAction func saveDocument(_ sender: Any) {
         do {
             let exportString: String = try SettingsService.shared.getAsJson(
-                settings: SettingsService.shared.settings!,
-                removePassword: true
+                settings: SettingsService.shared.settings!
             )
             let dateFormatter = DateFormatter()
             dateFormatter.dateFormat = "Y-MM-dd-HH-mm-ss"

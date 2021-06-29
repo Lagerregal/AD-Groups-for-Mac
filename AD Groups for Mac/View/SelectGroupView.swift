@@ -60,17 +60,17 @@ struct SelectGroupView: View {
         do {
             print("loadGroups")
             // check settings
-            if ((SettingsService.shared.settings?.ldapUrl.isEmpty) != nil) {
+            if (SettingsService.shared.settings!.ldapUrl.isEmpty) {
                 throw NoSettingsError.noLdapUrl
             }
             let currentUserName = SettingsService.shared.settings!.ldapUser
             if (currentUserName.isEmpty) {
                 throw NoSettingsError.noLdapUser
             }
-            if ((SettingsService.shared.settings?.loginName.isEmpty) != nil) {
+            if (SettingsService.shared.settings!.loginName.isEmpty) {
                 throw NoSettingsError.noLoginName
             }
-            if ((SettingsService.shared.settings?.loginPassword.isEmpty) != nil) {
+            if (SettingsService.shared.settings!.loginPassword.isEmpty) {
                 throw NoSettingsError.noLoginPassword
             }
 
