@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		28023D46246DDD2F00F4392E /* HelpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28023D45246DDD2F00F4392E /* HelpView.swift */; };
 		280BEDE726613B4D00F0F013 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 280BEDE926613B4D00F0F013 /* MainMenu.xib */; };
+		28342FEC268B14C6001902C1 /* NoSettingsError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28342FEB268B14C6001902C1 /* NoSettingsError.swift */; };
 		288460CF2661411F007EC3ED /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 288460CD2661411F007EC3ED /* Localizable.strings */; };
 		2899E4CF246C3E5900EDB0DA /* AddMembers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2899E4CE246C3E5900EDB0DA /* AddMembers.swift */; };
 		289DF76D246D652E0022911D /* GroupStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 289DF76C246D652E0022911D /* GroupStorage.swift */; };
@@ -34,6 +35,7 @@
 
 /* Begin PBXFileReference section */
 		28023D45246DDD2F00F4392E /* HelpView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelpView.swift; sourceTree = "<group>"; };
+		28342FEB268B14C6001902C1 /* NoSettingsError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoSettingsError.swift; sourceTree = "<group>"; };
 		286954D026613B800071C8D6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
 		288460CE2661411F007EC3ED /* Base */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; name = Base; path = Base.lproj/Localizable.strings; sourceTree = "<group>"; };
 		288460D12661417B007EC3ED /* de */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; name = de; path = de.lproj/Localizable.strings; sourceTree = "<group>"; };
@@ -89,6 +91,7 @@
 				28FFE5A0246B07430042754E /* AlertService.swift */,
 				289DF76F246D698E0022911D /* ErrorMessage.swift */,
 				289DF77B246D98460022911D /* SettingsService.swift */,
+				28342FEB268B14C6001902C1 /* NoSettingsError.swift */,
 			);
 			path = Utility;
 			sourceTree = "<group>";
@@ -278,6 +281,7 @@
 				289DF776246D88AC0022911D /* main.swift in Sources */,
 				2899E4CF246C3E5900EDB0DA /* AddMembers.swift in Sources */,
 				28FFE59A246AA0290042754E /* LdapConnection.swift in Sources */,
+				28342FEC268B14C6001902C1 /* NoSettingsError.swift in Sources */,
 				28FFE5A1246B07430042754E /* AlertService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -431,7 +435,7 @@
 				CODE_SIGN_IDENTITY = "-";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
-				CURRENT_PROJECT_VERSION = 2;
+				CURRENT_PROJECT_VERSION = 3;
 				DEVELOPMENT_ASSET_PATHS = "\"AD Groups for Mac/Preview Content\"";
 				DEVELOPMENT_TEAM = "";
 				ENABLE_PREVIEWS = YES;
@@ -441,7 +445,7 @@
 					"@executable_path/../Frameworks",
 				);
 				MACOSX_DEPLOYMENT_TARGET = 11.0;
-				MARKETING_VERSION = 1.1;
+				MARKETING_VERSION = 1.2;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.different.technology.AD-Groups-for-Mac";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
@@ -456,7 +460,7 @@
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
-				CURRENT_PROJECT_VERSION = 2;
+				CURRENT_PROJECT_VERSION = 3;
 				DEVELOPMENT_ASSET_PATHS = "\"AD Groups for Mac/Preview Content\"";
 				DEVELOPMENT_TEAM = "";
 				ENABLE_HARDENED_RUNTIME = YES;
@@ -467,7 +471,7 @@
 					"@executable_path/../Frameworks",
 				);
 				MACOSX_DEPLOYMENT_TARGET = 11.0;
-				MARKETING_VERSION = 1.1;
+				MARKETING_VERSION = 1.2;
 				ONLY_ACTIVE_ARCH = YES;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.different.technology.AD-Groups-for-Mac";
 				PRODUCT_NAME = "$(TARGET_NAME)";

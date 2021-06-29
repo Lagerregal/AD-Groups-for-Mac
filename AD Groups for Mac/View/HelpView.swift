@@ -9,6 +9,8 @@
 import SwiftUI
 
 struct HelpView: View {
+    @State var version: String = ""
+
     var body: some View {
         VStack{
             Text(LocalizedStringKey("view.help.openHelp")).bold()
@@ -22,6 +24,7 @@ struct HelpView: View {
             }
             Divider().padding(30)
             Text(LocalizedStringKey("general.copyright"))
+            Text(LocalizedStringKey("general.version \(version)"))
             Button(action: {
                 guard let url = URL(
                         string: "https://different.technology"
@@ -31,6 +34,10 @@ struct HelpView: View {
                 Text("https://different.technology")
             }
         }.padding(30)
+        .onAppear(perform: {
+            let nsObject: AnyObject? = Bundle.main.infoDictionary!["CFBundleShortVersionString"] as AnyObject
+            version = nsObject as! String
+        })
     }
 }
 

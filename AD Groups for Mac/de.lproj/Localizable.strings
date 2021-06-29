@@ -3,6 +3,7 @@
 "general.title" = "AD Groups for Mac";
 "general.subtitle" = "Manage your Active Directory groups.";
 "general.copyright" = "Copyright © 2021 different.technology by Markus Hölzle";
+"general.version %@" = "Version %@";
 "general.openJson" = "Bitte .json Datei auswählen";
 "general.exportJson" = "Einstellungen exportieren";
 "general.helpTitle" = "Hilfe";
@@ -30,7 +31,7 @@
 "view.selectGroup.settings" = "Einstellungen";
 "view.selectGroup.welcome %@" = "Willkommen: %@";
 "view.selectGroup.notLoggedIn" = "nicht eingeloggt";
-"view.selectGroup.noUserFound" = "Kein Benutzer gefunden für: %@";
+"view.selectGroup.noUserFound %@" = "Kein Benutzer gefunden für: %@";
 
 // SettingsView
 "view.settings.settings" = "Einstellungen";

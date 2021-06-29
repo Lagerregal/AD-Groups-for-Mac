@@ -59,7 +59,22 @@ struct SelectGroupView: View {
     private func loadGroups() {
         do {
             print("loadGroups")
+            // check settings
+            if ((SettingsService.shared.settings?.ldapUrl.isEmpty) != nil) {
+                throw NoSettingsError.noLdapUrl
+            }
             let currentUserName = SettingsService.shared.settings!.ldapUser
+            if (currentUserName.isEmpty) {
+                throw NoSettingsError.noLdapUser
+            }
+            if ((SettingsService.shared.settings?.loginName.isEmpty) != nil) {
+                throw NoSettingsError.noLoginName
+            }
+            if ((SettingsService.shared.settings?.loginPassword.isEmpty) != nil) {
+                throw NoSettingsError.noLoginPassword
+            }
+
+            // find current user
             let rawUsers = try LdapConnection.shared.initConnection().findUsersByCn(name: currentUserName)
             if (rawUsers.count < 1) {
                 throw ErrorMessage.runtimeError(NSLocalizedString(
@@ -70,6 +85,7 @@ struct SelectGroupView: View {
             let rawUser = rawUsers.first
             self.currentUser = UserStorage.shared.getUserByRawData(dn: rawUser!.key, data: rawUser!.value)
 
+            // find groups
             let rawGroups = try LdapConnection.shared.findGroupsManagableByUser(userDn: self.currentUser!.dn)
             .sorted(by: { (el1, el2) -> Bool in
                 el1.key.localizedCaseInsensitiveCompare(el2.key) == .orderedAscending
@@ -77,13 +93,12 @@ struct SelectGroupView: View {
             for(groupDn, groupData) in rawGroups {
                 self.groups.append(GroupStorage.shared.getGroupByRawData(dn: groupDn, data: groupData))
             }
+        } catch is NoSettingsError {
+            print("No settings found")
+            currentView = SelectGroupView.VIEW_SETTINGS
         } catch {
-            if ((SettingsService.shared.settings?.ldapUrl.isEmpty) != nil) {
-                print("No settings found")
-            } else {
-                print("connection error")
-                AlertService.showErrorMessage(message: "\(error)")
-            }
+            print("connection error")
+            AlertService.showErrorMessage(message: "\(error)")
             currentView = SelectGroupView.VIEW_SETTINGS
         }
     }
